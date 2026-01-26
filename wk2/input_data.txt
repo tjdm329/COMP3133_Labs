@@ -1,0 +1,7 @@
+===========================================================================================
+The node:fs module enables interacting with the file system in a way modeled on standard POSIX functions.
+
+To use the promise-based APIs: const fs = require('node:fs/promises');
+To use the callback and sync APIs: const fs = require('node:fs');
+
+===========================================================================================
