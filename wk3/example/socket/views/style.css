@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    color: #444;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+select, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+select:focus, textarea:focus {
+    border-color: #5c9ded;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:active {
+    background-color: #3e8e41;
+}
+
+.container {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.left-panel,
+.right-panel {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+#event-window {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    overflow: auto;
+    background: #fafafa;
+    margin: 20pt auto;
+}
+
+#event-log {
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #fc5353;
+    border-radius: 5px;
+    background-color: #d9efd5;
+    text-align: left;
+}
+
+#event-log p {
+    padding: 5px;
+    margin: 5px 0;
+    border: 2px solid #2e43be;
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}

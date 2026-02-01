@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO Event Interface</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- socket.io.js file provides functions to client for socket communication-->
+    <script src = "/socket.io/socket.io.js"></script>
+
+    <script src="client.js" defer></script>
+</head>
+<body>
+    <h1>Socket Programming</h1>
+
+    <h2 id="client-id">Client ID - </h2>
+
+    <div class="container">
+        <div class="left-panel" id="event-window">
+            <button class="btn" onclick="sendPing()">Ping server</button><br /><br />
+
+            <input type="text" id="message-input" placeholder="Enter a message..." />
+            <button class="btn" onclick="sendChatMessage()">Send Chat Message</button><br /><br />
+
+            <label for="feedback-message">Write your feedback here: </label>
+            <textarea id="feedback-message" placeholder="Write your feedback here..."></textarea><br /><br />
+            <button class="btn" onclick="sendFeedback()">Send Feedback</button><br /><br />
+
+            <button class="btn" onclick="joinGroup()">Join Group</button><br /><br />
+
+            <button class="btn" onclick="leaveGroup()">Leave Group</button><br /><br />
+
+            <button class="btn" onclick="disconnectServer()">Disconnect</button><br /><br />
+        </div>
+
+        <div class="right-panel" id="event-window">
+            <h2>Event Logs</h2>
+            <div id="event-log"></div>
+        </div>
+    </div>
+</body>
+</html>
