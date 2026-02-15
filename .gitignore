@@ -1,3 +1,2 @@
-wk2/node_modules/
-wk2/package-lock.json
-wk2/package.json
+node_modules
+.env
